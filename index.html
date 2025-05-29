@@ -1,64 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>3D Cube</title>
+  <meta charset="UTF-8">
+  <title>3D Hello World</title>
   <style>
     body {
       margin: 0;
-      background: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 100vh;
-      perspective: 1000px;
-      color: white;
-    }
-
-    .scene {
-      width: 200px;
-      height: 200px;
-      position: relative;
-      transform-style: preserve-3d;
-      animation: rotate 10s infinite linear;
-    }
-
-    .face {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 2px solid #0ff;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 24px;
-      font-family: sans-serif;
-      font-weight: bold;
+      background: #111;
+      perspective: 500px;
     }
-
-    .front  { transform: translateZ(100px); }
-    .back   { transform: rotateY(180deg) translateZ(100px); }
-    .right  { transform: rotateY(90deg)  translateZ(100px); }
-    .left   { transform: rotateY(-90deg) translateZ(100px); }
-    .top    { transform: rotateX(90deg)  translateZ(100px); }
-    .bottom { transform: rotateX(-90deg) translateZ(100px); }
-
-    @keyframes rotate {
-      from { transform: rotateX(0deg) rotateY(0deg); }
-      to   { transform: rotateX(360deg) rotateY(360deg); }
+    h1 {
+      color: white;
+      font-size: 4rem;
+      transform: rotateX(20deg) rotateY(30deg);
+      text-shadow: 2px 2px 5px #0ff;
     }
   </style>
 </head>
 <body>
-  <div class="scene">
-    <div class="face front">dhruv</div>
-    <div class="face back">vardhit</div>
-    <div class="face right">meet</div>
-    <div class="face left">rutvik</div>
-    <div class="face top">bhado</div>
-    <div class="face bottom">nirmit</div>
-  </div>
+  <h1>Hello World</h1>
 </body>
 </html>
